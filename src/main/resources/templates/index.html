@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add new word</h1>
+<form action="#" method="post" th:action="@{/save}" th:object="${word}">
+    <p>Word: <input type="text" name="polishName"/></p>
+    <p>Word: <input type="text" name="englishName"/></p>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
